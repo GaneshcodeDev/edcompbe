@@ -1,0 +1,1 @@
+console.warn('This package is deprecated');
