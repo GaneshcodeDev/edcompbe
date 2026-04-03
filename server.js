@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 // ─── Security Middleware ───
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:4200',
+  origin: 'https://edcomp.vercel.app' || 'http://localhost:4200',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Tenant-Id'],
